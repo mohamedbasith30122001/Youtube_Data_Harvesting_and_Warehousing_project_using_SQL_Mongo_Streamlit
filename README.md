@@ -46,7 +46,7 @@ pip install<module name>
 ## a) Extract data
 * Initially, we Fetch the data from the **Youtube Api live data** by using Python libraries.
 * using **api_key**
-### - In order to get the data 
+- ### In order to get the data 
 #### - Inorder to youtube data into to working environment use below command
 * Create the four function to fecth or extract the data **channel,playlist,video,comment details**.
 ### b) Process and Transform the data
