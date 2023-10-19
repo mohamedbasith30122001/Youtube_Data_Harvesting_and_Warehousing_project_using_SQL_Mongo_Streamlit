@@ -49,8 +49,8 @@ pip install<module name>
 - ### In order to get the data 
 #### - Inorder to youtube data into to working environment use below command
 * Create the four function to fecth or extract the data **channel,playlist,video,comment details**.
-### b) Process and Transform the data
-#### - Fetch data & Transform into MongoDB 
+## b) Process and Transform the data
+### Fetch data & Transform into MongoDB 
 - after extracted the data from youtube api data to  insert the form of json format to MongoDB
 - In order to migrate the data **MongoDB to PostgreSQL**
 ```python
@@ -59,8 +59,8 @@ client=pymongo.MongoClient('mongodb+srv://mhd_basith:mohamedbasith@cluster0.wknu
 db=client['youtube_database']
 collection=db['allchannel_data']
 ```
-### c) Load  data 
-#### - Create Table and Insert into Postgresql
+## c) Load  data 
+###  Create Table and Insert into Postgresql
 - After creating table insert the data into inner server by using postgresql
 - To Establish the connection with sql server
 - below table to reference another tables 
@@ -96,7 +96,7 @@ def insert_channel_details(chanl_name):
 ```
 # E D A Process and Frame work
 ## a) Access PostSQL DB 
-### - Create a connection to the postgreSQL server and access the specified postgreSQL DataBase by using **psycopg2** library
+###  Create a connection to the postgreSQL server and access the specified postgreSQL DataBase by using **psycopg2** library
 ```python
 SELECT * FROM "Table"
 WHERE "Condition"
@@ -104,7 +104,7 @@ GROUP BY "Columns"
 ORDER BY "Data"
 ```
 ## b) Visualization 
-### - Finally, create a Dashboard by using Streamlit and applying selection and dropdown options on the Dashboard and show the output are Dataframe Table on corresponding query and questions
+###  Finally, create a Dashboard by using Streamlit and applying selection and dropdown options on the Dashboard and show the output are Dataframe Table on corresponding query and questions
 ```python
 df=pd.DataFrame(csr.fetchall())
         df_re=df.rename(columns={0:'channel_name',1:'channel_views'})
