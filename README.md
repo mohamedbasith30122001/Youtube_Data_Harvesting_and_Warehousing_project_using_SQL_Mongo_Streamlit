@@ -114,4 +114,4 @@ df=pd.DataFrame(csr.fetchall())
 - visualizing the data with Dataframe and streamlit dashboard
 - streamlit run <filename.py> to run terminal
 # Conculsion
-## - I hope this project helps you to the understand more about youtube data analysis and datafame visualization
+- I hope this project helps you to the understand more about youtube data analysis and datafame visualization
